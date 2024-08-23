@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Wrapper = styled.div`
     width: calc(100% - 32px);
     padding: 16px;
-    display: felx;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -17,7 +17,7 @@ const Wrapper = styled.div`
     }
 `;
 
-const TitleText = styled.p `
+const TitleText = styled.p`
     font-size: 20px;
     font-weight: 500;
 `;

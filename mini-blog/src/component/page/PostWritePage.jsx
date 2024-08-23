@@ -17,10 +17,8 @@ const Container = styled.div`
     width: 100%;
     max-width: 720px;
 
-    & > * {
-        :not(:last-child) {
-            margin-botton: 16px;
-        }
+    :not(:last-child) {
+        margin-bottom: 16px;
     }
 `;
 
@@ -28,7 +26,7 @@ function PostWritePage(props) {
     const navigate = useNavigate();
 
     const [title, setTitle] = useState("");
-    const [content, setContet] = useState("");
+    const [content, setContent] = useState("");
 
     return (
         <Wrapper>
@@ -45,7 +43,7 @@ function PostWritePage(props) {
                     height={480}
                     value={content}
                     onChange={(event) => {
-                        setTitle(event.target.value);
+                        setContent(event.target.value);
                     }}
                 />
 
